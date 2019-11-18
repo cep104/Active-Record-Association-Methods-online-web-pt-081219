@@ -1,3 +1,4 @@
+require 'pry'
 class Artist < ActiveRecord::Base
   has_many :songs
   has_many :genres, through: :songs
@@ -19,6 +20,7 @@ class Artist < ActiveRecord::Base
     artist_genres = []
     new.each do |song|
     artist_genres << song.genre
+    binding.pry
   end
   end
 end
