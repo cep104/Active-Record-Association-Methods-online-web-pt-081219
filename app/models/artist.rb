@@ -20,7 +20,8 @@ class Artist < ActiveRecord::Base
     artist_genres = []
     new.each do |song|
     artist_genres << song.genre
-    binding.pry
+   
   end
+  artist_genres.length
   end
 end
