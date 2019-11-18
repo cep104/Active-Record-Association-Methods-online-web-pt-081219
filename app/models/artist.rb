@@ -19,4 +19,5 @@ class Artist < ActiveRecord::Base
     new.each |song|
     artist_genres = song.genre
   end
+  end
 end
