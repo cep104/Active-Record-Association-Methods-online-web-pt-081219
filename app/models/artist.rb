@@ -17,7 +17,7 @@ class Artist < ActiveRecord::Base
   def genre_count
     new = self.songs
     new.each |song|
-    artist_genres = song.genre
+    artist_genres << song.genre
   end
   end
 end
